@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users' => 'users#index'
+
   get 'pages/index'
 
   devise_for :users
